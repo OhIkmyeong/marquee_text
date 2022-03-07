@@ -1,0 +1,12 @@
+@charset "utf-8";
+*{margin:0;padding:0;box-sizing:border-box;}
+li{list-style-type:none;}
+table{table-layout:fixed; border-collapse:collapse; border-spacing:0;}
+a{text-decoration:none;color:inherit;}
+
+html,body{width:100%; min-height:100vh;}
+
+body{
+    width:100%; min-height:100vh; overflow-x:hidden;
+    background:rgb(70, 70, 70);
+    color:yellow;}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.wrap-marqueeText{
+    /* outline:1px solid red; */
+    gap:3em;
+    position:relative; overflow:hidden;
+    width:80%;
+    margin:20px auto;
+    background:#000;
+}
+
+/* 수평 - 왼쪽으로 (기본) */
+.marqueeText{
+    display:flex; flex-flow:row nowrap;
+    justify-content:flex-start; align-items:center;
+    gap:40px;
+    position:relative;}
+
+/* 수직 */
+.marqueeText.vertical{flex-flow:column nowrap;}
+
+/* 애니메이션 */
+.marqueeText li{
+    flex:none;
+    position:relative;
+    font-size:2rem; font-weight:bold;}

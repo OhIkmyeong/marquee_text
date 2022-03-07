@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<mata name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>마퀴 테스트</title>
+<style type="text/css">
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html,body{
+        width:100%;height:100vh;overflow:hidden;background:#eee;}
+    #cont{
+        position:relative; overflow:hidden;
+        width:90%;height:3.5em;
+        margin:30vh auto;
+        /* background:#000; */
+        border:1px solid #000;
+    }
+    #cont li{
+        display:flex;
+        align-items:flex-start;
+        position:absolute;
+        width:100%;height:100%;
+        top:0;left:0;
+        background:#fff;
+        animation: moveLeft 10s linear infinite;}
+
+    #cont li:nth-child(2){left:100%;}
+
+    #cont li span{
+        display:inline-block;
+        position:relative;
+        padding:1em 2em;}
+
+    #cont li span:first-child{color:red;}
+
+@keyframes moveLeft {
+    from{transform:translateX(0);}
+    to{transform:translateX(-100%);}
+}
+</style>
+<script src="marquee.js" defer></script>
+</head>
+<body>
+
+    <ul id="cont">
+        <li>
+            <span>START</span><span>Lorem Ipsum</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quos.</span>
+            <span>TEXT</span><span>Lorem Ipsum</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quos.</span>
+            <span>TEXTdfdd</span>
+        </li>
+    </ul>
+
+</body>
+</html>
